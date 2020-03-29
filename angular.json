@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "projects": {
+    "latin-swag-studio-web": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/latin-swag-studio-web",
+      "sourceRoot": "apps/latin-swag-studio-web/src",
+      "prefix": "swagex",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/latin-swag-studio-web",
+            "index": "apps/latin-swag-studio-web/src/index.html",
+            "main": "apps/latin-swag-studio-web/src/main.ts",
+            "polyfills": "apps/latin-swag-studio-web/src/polyfills.ts",
+            "tsConfig": "apps/latin-swag-studio-web/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/latin-swag-studio-web/src/favicon.ico",
+              "apps/latin-swag-studio-web/src/assets"
+            ],
+            "styles": ["apps/latin-swag-studio-web/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/latin-swag-studio-web/src/environments/environment.ts",
+                  "with": "apps/latin-swag-studio-web/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "latin-swag-studio-web:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "latin-swag-studio-web:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "latin-swag-studio-web:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/latin-swag-studio-web/tsconfig.app.json",
+              "apps/latin-swag-studio-web/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/latin-swag-studio-web/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/latin-swag-studio-web/jest.config.js",
+            "tsConfig": "apps/latin-swag-studio-web/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/latin-swag-studio-web/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "latin-swag-studio-web-e2e": {
+      "root": "apps/latin-swag-studio-web-e2e",
+      "sourceRoot": "apps/latin-swag-studio-web-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/latin-swag-studio-web-e2e/cypress.json",
+            "tsConfig": "apps/latin-swag-studio-web-e2e/tsconfig.e2e.json",
+            "devServerTarget": "latin-swag-studio-web:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "latin-swag-studio-web:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/latin-swag-studio-web-e2e/tsconfig.e2e.json"],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/latin-swag-studio-web-e2e/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "latin-swag-studio-web"
+}
