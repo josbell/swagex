@@ -25,9 +25,7 @@
               "apps/latin-swag-studio-web/src/favicon.ico",
               "apps/latin-swag-studio-web/src/assets"
             ],
-            "styles": [
-              "apps/latin-swag-studio-web/src/styles.scss"
-            ],
+            "styles": ["apps/latin-swag-studio-web/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -85,10 +83,7 @@
               "apps/latin-swag-studio-web/tsconfig.app.json",
               "apps/latin-swag-studio-web/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/latin-swag-studio-web/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/latin-swag-studio-web/**"]
           }
         },
         "test": {
@@ -123,9 +118,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/latin-swag-studio-web-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/latin-swag-studio-web-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/latin-swag-studio-web-e2e/**"
@@ -147,10 +140,7 @@
               "libs/utils/tsconfig.lib.json",
               "libs/utils/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/utils/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/utils/**"]
           }
         },
         "test": {
@@ -176,10 +166,7 @@
               "libs/feature/api/tsconfig.lib.json",
               "libs/feature/api/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/feature/api/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/feature/api/**"]
           }
         },
         "test": {
@@ -205,10 +192,7 @@
               "libs/feature/shared/tsconfig.lib.json",
               "libs/feature/shared/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/feature/shared/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/feature/shared/**"]
           }
         },
         "test": {
@@ -234,10 +218,7 @@
               "libs/feature/lazy/tsconfig.lib.json",
               "libs/feature/lazy/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/feature/lazy/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/feature/lazy/**"]
           }
         },
         "test": {
@@ -263,10 +244,7 @@
               "libs/ui/tsconfig.lib.json",
               "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/ui/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/ui/**"]
           }
         },
         "test": {
@@ -276,6 +254,38 @@
             "tsConfig": "libs/ui/tsconfig.spec.json",
             "passWithNoTests": true
           }
+        }
+      }
+    },
+    "ui-web-layout-material": {
+      "projectType": "library",
+      "root": "libs/ui/web-layout-material",
+      "sourceRoot": "libs/ui/web-layout-material/src",
+      "prefix": "ui-layout-mat",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui/web-layout-material/tsconfig.lib.json",
+              "libs/ui/web-layout-material/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui/web-layout-material/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/web-layout-material/jest.config.js",
+            "tsConfig": "libs/ui/web-layout-material/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/web-layout-material/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
         }
       }
     }
