@@ -15,8 +15,37 @@
       "tags": []
     },
     "latin-swag-studio-web-e2e": {
-      "tags": [],
-      "implicitDependencies": ["latin-swag-studio-web"]
+      "tags": [
+        "app"
+      ],
+      "implicitDependencies": [
+        "latin-swag-studio-web"
+      ]
+    },
+    "utils": {
+      "tags": [
+        "apps shared"
+      ]
+    },
+    "feature-api": {
+      "tags": [
+        "feature:api"
+      ]
+    },
+    "feature-shared": {
+      "tags": [
+        "feature:shared"
+      ]
+    },
+    "feature-lazy": {
+      "tags": [
+        "feature:lazy"
+      ]
+    },
+    "ui": {
+      "tags": [
+        "shared"
+      ]
     }
   }
 }
