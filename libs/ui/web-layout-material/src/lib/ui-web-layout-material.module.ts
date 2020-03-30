@@ -10,6 +10,7 @@ import { SideNavItemComponent } from './side-nav-item/side-nav-item.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
+import { LayoutService } from './layout.service';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,6 @@ import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.com
     SocialMediaBarComponent
   ],
   imports: [RouterModule, CommonModule, RouterModule, MaterialModule],
-  exports: []
+  exports: [LayoutService, LayoutComponent]
 })
 export class UiWebLayoutMaterialModule {}
