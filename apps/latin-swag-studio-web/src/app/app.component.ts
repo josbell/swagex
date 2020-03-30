@@ -1,23 +1,6 @@
 import { Component } from '@angular/core';
 import { LayoutService } from '@swagex/ui/web-layout-material';
-
-export interface IconFiles {
-  imageFile: string;
-  alt: string;
-  link: string;
-}
-
-export interface MenuItem {
-  text: string;
-  route: string;
-  icon?: string;
-  submenu?: MenuItem[];
-}
-export interface FrameworkConfigSettings {
-  title: string;
-  menuItems: MenuItem[];
-  socialIcons?: IconFiles[];
-}
+import { FrameworkConfigSettings } from '@swagex/ui/web-layout-material';
 
 @Component({
   selector: 'swagex-root',
