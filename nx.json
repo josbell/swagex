@@ -12,29 +12,29 @@
   },
   "projects": {
     "latin-swag-studio-web": {
-      "tags": []
+      "tags": ["app"]
     },
     "latin-swag-studio-web-e2e": {
       "tags": ["app"],
       "implicitDependencies": ["latin-swag-studio-web"]
     },
     "utils": {
-      "tags": ["apps shared"]
+      "tags": ["app", "shared"]
     },
     "feature-api": {
-      "tags": ["feature:api"]
+      "tags": ["app", "feature:api"]
     },
     "feature-shared": {
-      "tags": ["feature:shared"]
+      "tags": ["app", "feature:shared"]
     },
     "feature-lazy": {
-      "tags": ["feature:lazy"]
+      "tags": ["app", "feature:lazy"]
     },
     "ui": {
-      "tags": ["shared"]
+      "tags": ["app", "shared"]
     },
     "ui-web-layout-material": {
-      "tags": ["app shared"]
+      "tags": ["app", "shared"]
     }
   }
 }

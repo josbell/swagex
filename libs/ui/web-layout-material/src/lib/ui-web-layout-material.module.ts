@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { LayoutComponent } from './layout/layout.component';
 import { MaterialModule } from './material.module';
@@ -10,7 +11,6 @@ import { SideNavItemComponent } from './side-nav-item/side-nav-item.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
-import { LayoutService } from './layout.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,13 @@ import { LayoutService } from './layout.service';
     FooterComponent,
     SocialMediaBarComponent
   ],
-  imports: [RouterModule, CommonModule, RouterModule, MaterialModule],
-  exports: [LayoutService, LayoutComponent]
+  imports: [
+    RouterModule,
+    CommonModule,
+    RouterModule,
+    MaterialModule,
+    FlexLayoutModule
+  ],
+  exports: [LayoutComponent]
 })
 export class UiWebLayoutMaterialModule {}
