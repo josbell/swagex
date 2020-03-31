@@ -16,13 +16,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@swagex/utils": ["libs/utils/src/index.ts"],
-      "@swagex/feature/api": ["libs/feature/api/src/index.ts"],
-      "@swagex/feature/shared": ["libs/feature/shared/src/index.ts"],
-      "@swagex/feature/lazy": ["libs/feature/lazy/src/index.ts"],
-      "@swagex/ui": ["libs/ui/src/index.ts"],
       "@swagex/ui/web-layout-material": [
         "libs/ui/web-layout-material/src/index.ts"
+      ],
+      "@swagex/common-ui/material-layout-web": [
+        "libs/common-ui/material-layout-web/src/index.ts"
+      ],
+      "@swagex/common-ui/material": ["libs/common-ui/material/src/index.ts"],
+      "@swagex/latin-swag-studio-web/home": [
+        "libs/latin-swag-studio-web/home/src/index.ts"
       ]
     }
   },

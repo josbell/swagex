@@ -261,7 +261,7 @@
       "projectType": "library",
       "root": "libs/ui/web-layout-material",
       "sourceRoot": "libs/ui/web-layout-material/src",
-      "prefix": "ui-layout-mat",
+      "prefix": "mlw",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -280,6 +280,108 @@
             "tsConfig": "libs/ui/web-layout-material/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/ui/web-layout-material/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "common-ui-material-layout-web": {
+      "projectType": "library",
+      "root": "libs/common-ui/material-layout-web",
+      "sourceRoot": "libs/common-ui/material-layout-web/src",
+      "prefix": "mlw",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common-ui/material-layout-web/tsconfig.lib.json",
+              "libs/common-ui/material-layout-web/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/common-ui/material-layout-web/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common-ui/material-layout-web/jest.config.js",
+            "tsConfig": "libs/common-ui/material-layout-web/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/common-ui/material-layout-web/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "common-ui-material": {
+      "projectType": "library",
+      "root": "libs/common-ui/material",
+      "sourceRoot": "libs/common-ui/material/src",
+      "prefix": "swagex",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common-ui/material/tsconfig.lib.json",
+              "libs/common-ui/material/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common-ui/material/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common-ui/material/jest.config.js",
+            "tsConfig": "libs/common-ui/material/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/common-ui/material/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "latin-swag-studio-web-home": {
+      "projectType": "library",
+      "root": "libs/latin-swag-studio-web/home",
+      "sourceRoot": "libs/latin-swag-studio-web/home/src",
+      "prefix": "swagex",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/latin-swag-studio-web/home/tsconfig.lib.json",
+              "libs/latin-swag-studio-web/home/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/latin-swag-studio-web/home/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/latin-swag-studio-web/home/jest.config.js",
+            "tsConfig": "libs/latin-swag-studio-web/home/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/latin-swag-studio-web/home/src/test-setup.ts"
           }
         }
       },

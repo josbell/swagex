@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-import { UiWebLayoutMaterialModule } from '@swagex/ui/web-layout-material';
+import { CommonUiMaterialLayoutWebModule } from '@swagex/common-ui/material-layout-web';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    UiWebLayoutMaterialModule
+    CommonUiMaterialLayoutWebModule
   ],
   providers: [],
   bootstrap: [AppComponent]

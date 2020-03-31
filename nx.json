@@ -18,23 +18,14 @@
       "tags": ["app"],
       "implicitDependencies": ["latin-swag-studio-web"]
     },
-    "utils": {
-      "tags": ["app", "shared"]
+    "common-ui-material-layout-web": {
+      "tags": ["shared"]
     },
-    "feature-api": {
-      "tags": ["app", "feature:api"]
+    "common-ui-material": {
+      "tags": ["shared"]
     },
-    "feature-shared": {
-      "tags": ["app", "feature:shared"]
-    },
-    "feature-lazy": {
-      "tags": ["app", "feature:lazy"]
-    },
-    "ui": {
-      "tags": ["app", "shared"]
-    },
-    "ui-web-layout-material": {
-      "tags": ["app", "shared"]
+    "latin-swag-studio-web-home": {
+      "tags": ["feature:shared"]
     }
   }
 }

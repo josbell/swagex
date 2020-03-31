@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { LayoutService } from '@swagex/ui/web-layout-material';
-import { FrameworkConfigSettings } from '@swagex/ui/web-layout-material';
+import {
+  LayoutConfig,
+  LayoutService
+} from '@swagex/common-ui/material-layout-web';
 
 @Component({
   selector: 'swagex-root',
@@ -11,7 +13,7 @@ export class AppComponent {
   title = 'Latin Swag';
 
   constructor(configService: LayoutService) {
-    const frameworkConfig: FrameworkConfigSettings = {
+    const frameworkConfig: LayoutConfig = {
       title: this.title,
       menuItems: [
         { text: 'Schedule', route: '/schedule', icon: 'group' },
