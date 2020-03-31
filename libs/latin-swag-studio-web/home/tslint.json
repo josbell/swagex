@@ -1,8 +1,8 @@
 {
   "extends": "../../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "swagex", "camelCase"],
-    "component-selector": [true, "element", "swagex", "kebab-case"]
+    "directive-selector": [true, "attribute", "ls-studio", "camelCase"],
+    "component-selector": [true, "element", "ls-studio", "kebab-case"]
   },
   "linterOptions": {
     "exclude": ["!**/*"]

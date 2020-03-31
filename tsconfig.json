@@ -16,9 +16,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@swagex/ui/web-layout-material": [
-        "libs/ui/web-layout-material/src/index.ts"
-      ],
       "@swagex/common-ui/material-layout-web": [
         "libs/common-ui/material-layout-web/src/index.ts"
       ],
