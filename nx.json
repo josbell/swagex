@@ -26,6 +26,9 @@
     },
     "latin-swag-studio-web-home": {
       "tags": ["feature:shared"]
+    },
+    "common-ui-styles": {
+      "tags": ["shared"]
     }
   }
 }

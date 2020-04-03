@@ -14,9 +14,10 @@ export interface MenuItem {
 }
 
 export interface LayoutConfig {
-  title: string;
+  title?: string;
   menuItems: MenuItem[];
   socialIcons?: IconFiles[];
+  toolbarColor?: string;
 }
 
 export interface UserInfo {

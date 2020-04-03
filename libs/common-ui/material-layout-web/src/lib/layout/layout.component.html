@@ -1,5 +1,11 @@
 <section class="grid-container">
-  <mat-toolbar color="primary" class="header" role="heading" flexLayout>
+  <mat-toolbar
+    [color]="toolbarColor ? null : 'primary'"
+    [ngStyle]="{ 'background-color': toolbarColor }"
+    class="header"
+    role="heading"
+    flexLayout
+  >
     <button fxHide.gt-sm mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>

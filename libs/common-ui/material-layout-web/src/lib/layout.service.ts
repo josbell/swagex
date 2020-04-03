@@ -5,9 +5,10 @@ import { IconFiles, MenuItem, LayoutConfig } from './model';
   providedIn: 'root'
 })
 export class LayoutService {
-  title: string;
+  title?: string;
   socialIcons: IconFiles[];
   menuItems: MenuItem[];
+  toolbarColor?: string;
 
   constructor() {}
 

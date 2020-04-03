@@ -22,7 +22,8 @@
       "@swagex/common-ui/material": ["libs/common-ui/material/src/index.ts"],
       "@swagex/latin-swag-studio-web/home": [
         "libs/latin-swag-studio-web/home/src/index.ts"
-      ]
+      ],
+      "@swagex/common-ui/styles": ["libs/common-ui/styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,5 +1,44 @@
 <section class="banner"></section>
-<section class="welcome-offer">Welcome New Students</section>
-<section class="info-section">Info Section</section>
-<section class="dance-styles">Dance Styles</section>
-<section>Upcoming Events</section>
+<section class="welcome-offer">
+  <h1 class="mat-headline">Welcome New Students</h1>
+  <h2 class="mat-subheading-2">
+    Sign up now to receive a 25-minute taster lesson – completely free!
+  </h2>
+  <button mat-raised-button color="accent">Click To Sign Up!</button>
+</section>
+
+<section class="info-section mat-elevation-z24">
+  <ng-container *ngFor="let card of cards">
+    <swagex-material-card
+      [title]="card.title"
+      [subtitle]="card.subtitle"
+      [imageUrl]="card.imageUrl"
+      [alt]="card.alt"
+      [description]="card.description"
+      [actionButtons]="card.actionButton"
+    ></swagex-material-card>
+  </ng-container>
+</section>
+
+<section class="dance-styles">
+  <span class="heading">
+    <span class="mat-display-2">Our Classes</span>
+    <span>Choose your style</span>
+  </span>
+  <div class="style-grid">
+    <ng-container *ngFor="let style of styles">
+      <img
+        src="https://dance-studio.cmsmasters.net/wp-content/uploads/2015/04/3.jpg"
+      />
+    </ng-container>
+  </div>
+</section>
+
+<section class="upcoming-events">
+  <span class="section-heading">
+    <span class="mat-headline">Upcoming Events</span>
+    <span class="mat-subheading-2">Time to dance</span>
+  </span>
+
+  <div class="event-row" *ngFor="let event of events"></div>
+</section>

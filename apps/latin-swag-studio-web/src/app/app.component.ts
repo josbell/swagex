@@ -15,6 +15,7 @@ export class AppComponent {
   constructor(configService: LayoutService) {
     const frameworkConfig: LayoutConfig = {
       title: this.title,
+      toolbarColor: '#fff',
       menuItems: [
         { text: 'Schedule', route: '/schedule', icon: 'group' },
         { text: 'Lessons', route: '/lessons', icon: 'person' },

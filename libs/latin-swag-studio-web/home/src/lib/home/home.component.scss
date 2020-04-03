@@ -1,6 +1,17 @@
+@import "theme_variables";
+@import "variables";
+
 :host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .address {
+    height: 15vh;
+  }
+
   .banner {
     height: 100vh;
+    padding: 20px;
     /* The image used */
     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
 
@@ -9,8 +20,70 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .welcome-offer {
-    height: 30vh;
-    background-color: white;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: $primary;
+  }
+
+  .info-section {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    swagex-material-card {
+      &:not(:first-child) {
+        margin-left: 100px;
+      }
+    }
+  }
+
+  .dance-styles {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      .mat-display-2 {
+        margin: 0;
+      }
+    }
+    .style-grid {
+      // Refactor  with Grid
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      img {
+        border-radius: 50%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .upcoming-events {
+    margin: 100px 0px;
+    padding: 20px;
+    .section-heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .mat-headline {
+        margin-bottom: 0;
+      }
+    }
   }
 }

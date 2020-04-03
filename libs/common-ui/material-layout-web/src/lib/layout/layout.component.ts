@@ -7,7 +7,10 @@ import { LayoutService } from '../layout.service';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-  constructor(public configService: LayoutService) {}
+  toolbarColor: string;
+  constructor(public configService: LayoutService) {
+    this.toolbarColor = this.configService.toolbarColor;
+  }
 
   ngOnInit(): void {}
 }
