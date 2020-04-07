@@ -1,6 +1,3 @@
-{
-  "extends": "./tsconfig.lib.json",
-  "angularCompilerOptions": {
-    "enableIvy": false
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a52cd72b84cce66ce638f3a2127683a2a88c45aa7a536d2c29d74aa81287d39a
+size 97

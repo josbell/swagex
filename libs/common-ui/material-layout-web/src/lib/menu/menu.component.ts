@@ -1,13 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { LayoutService } from '../layout.service';
-
-@Component({
-  selector: 'mlw-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
-})
-export class MenuComponent implements OnInit {
-  constructor(public configService: LayoutService) {}
-
-  ngOnInit(): void {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66c37f6679acd0199f2d29860c448fba962559b9b4751aa4eb0482f22d126a7c
+size 348

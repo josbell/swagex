@@ -1,33 +1,3 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-
-<mat-menu #menu="matMenu" dir="ltr">
-  <ng-container *ngFor="let item of configService.menuItems">
-    <button
-      *ngIf="item.submenu"
-      [routerLink]="item.route"
-      mat-menu-item
-      [matMenuTriggerFor]="sub_menu"
-    >
-      <mat-icon *ngIf="item.icon" class="routeIcon">{{ item.icon }}</mat-icon>
-      {{ item.text }}
-    </button>
-    <button *ngIf="!item.submenu" [routerLink]="item.route" mat-menu-item>
-      <mat-icon *ngIf="item.icon" class="routeIcon">{{ item.icon }}</mat-icon>
-      {{ item.text }}
-    </button>
-    <mat-menu #sub_menu="matMenu">
-      <ng-container *ngFor="let item of configService.menuItems">
-        <button
-          *ngFor="let subItem of item.submenu"
-          [routerLink]="subItem.route"
-          mat-menu-item
-        >
-          <mat-icon *ngIf="subItem.icon" class="routeIcon">{{
-            subItem.icon
-          }}</mat-icon>
-          {{ subItem.text }}
-        </button>
-      </ng-container>
-    </mat-menu>
-  </ng-container>
-</mat-menu>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a4417062ece08181cdd9d3fdaff5141b5b2bc51ed986097c4fb2a4711c538fd6
+size 1062

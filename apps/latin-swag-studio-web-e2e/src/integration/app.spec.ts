@@ -1,13 +1,3 @@
-import { getGreeting } from '../support/app.po';
-
-describe('latin-swag-studio-web', () => {
-  beforeEach(() => cy.visit('/'));
-
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
-
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to latin-swag-studio-web!');
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea6364eaed8c62d73e4d349ae9292687f28df873f6c862df4c1732faaf804083
+size 434

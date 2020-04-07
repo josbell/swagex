@@ -1,30 +1,3 @@
-{
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@swagex/common-ui/material-layout-web": [
-        "libs/common-ui/material-layout-web/src/index.ts"
-      ],
-      "@swagex/common-ui/material": ["libs/common-ui/material/src/index.ts"],
-      "@swagex/latin-swag-studio-web/home": [
-        "libs/latin-swag-studio-web/home/src/index.ts"
-      ],
-      "@swagex/common-ui/styles": ["libs/common-ui/styles/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b29f364133adccb118986ce90ce045a60f4b946884f368ec9c92a5dcd5cf47ec
+size 997

@@ -1,10 +1,3 @@
-module.exports = {
-  name: 'common-ui-material-layout-web',
-  preset: '../../../jest.config.js',
-  coverageDirectory: '../../../coverage/libs/common-ui/material-layout-web',
-  snapshotSerializers: [
-    'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
-    'jest-preset-angular/build/AngularSnapshotSerializer.js',
-    'jest-preset-angular/build/HTMLCommentSerializer.js'
-  ]
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:73a421854485667804f5a3926db12e75b0fee48c07d9847d10cbad1ebb124020
+size 401

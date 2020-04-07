@@ -1,13 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { LayoutService } from '../layout.service';
-
-@Component({
-  selector: 'mlw-social-media-bar',
-  templateUrl: './social-media-bar.component.html',
-  styleUrls: ['./social-media-bar.component.scss']
-})
-export class SocialMediaBarComponent implements OnInit {
-  constructor(public configService: LayoutService) {}
-
-  ngOnInit(): void {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8fa0b171f8311685c49e8b109964b53ce8b7faab97c3a367600be13b4d2ee188
+size 394

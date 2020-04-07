@@ -1,10 +1,3 @@
-module.exports = {
-  name: 'latin-swag-studio-web',
-  preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/latin-swag-studio-web',
-  snapshotSerializers: [
-    'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
-    'jest-preset-angular/build/AngularSnapshotSerializer.js',
-    'jest-preset-angular/build/HTMLCommentSerializer.js'
-  ]
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:607c01358e8fe5c7e5489263644aea7d0e08c8432be7846d6574434be5dd5049
+size 379

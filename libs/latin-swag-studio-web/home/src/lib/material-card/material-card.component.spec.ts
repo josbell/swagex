@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { MaterialCardComponent } from './material-card.component';
-
-describe('MaterialCardComponent', () => {
-  let component: MaterialCardComponent;
-  let fixture: ComponentFixture<MaterialCardComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MaterialCardComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MaterialCardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:b451b113b9722ef83bb43dd04ae823d4e4a2fb9465aa84dddc1915dbbee3c6fc
+size 671

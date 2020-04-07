@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { SideNavItemComponent } from './side-nav-item.component';
-
-describe('SideNavItemComponent', () => {
-  let component: SideNavItemComponent;
-  let fixture: ComponentFixture<SideNavItemComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SideNavItemComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SideNavItemComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd648df09897fb6af9d5320d97d2eba0f3dec7fcf559f7207b8b4bb4bedc27fd
+size 665

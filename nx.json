@@ -1,34 +1,3 @@
-{
-  "npmScope": "swagex",
-  "implicitDependencies": {
-    "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
-    "tsconfig.json": "*",
-    "tslint.json": "*",
-    "nx.json": "*"
-  },
-  "projects": {
-    "latin-swag-studio-web": {
-      "tags": ["app"]
-    },
-    "latin-swag-studio-web-e2e": {
-      "tags": ["app"],
-      "implicitDependencies": ["latin-swag-studio-web"]
-    },
-    "common-ui-material-layout-web": {
-      "tags": ["shared"]
-    },
-    "common-ui-material": {
-      "tags": ["shared"]
-    },
-    "latin-swag-studio-web-home": {
-      "tags": ["feature:shared"]
-    },
-    "common-ui-styles": {
-      "tags": ["shared"]
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91c40902c2ac15181d7a18a79978dbb306075ee8202eadc868f852423ab60827
+size 771

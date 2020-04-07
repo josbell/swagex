@@ -1,9 +1,3 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "../../../dist/out-tsc",
-    "types": []
-  },
-  "exclude": ["**/*.spec.ts"],
-  "include": ["**/*.ts"]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfddfe52aada3bb91150c189bcfe64b9ac5d802f3909c53b1ea9f28cf30e98ae
+size 175

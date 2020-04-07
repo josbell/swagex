@@ -1,22 +1,3 @@
-// ***********************************************************
-// This example plugins/index.js can be used to load plugins
-//
-// You can change the location of this file or turn off loading
-// the plugins file with the 'pluginsFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/plugins-guide
-// ***********************************************************
-
-// This function is called when a project is opened or re-opened (e.g. due to
-// the project's config changing)
-
-const { preprocessTypescript } = require('@nrwl/cypress/plugins/preprocessor');
-
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-
-  // Preprocess Typescript file using Nx helper
-  on('file:preprocessor', preprocessTypescript(config));
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd045a3eaf9b3e299789afc31e76012d76ca3437eaf28e67a0c8bfdf966c1c8c
+size 832

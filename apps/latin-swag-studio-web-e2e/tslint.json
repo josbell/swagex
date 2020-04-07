@@ -1,5 +1,3 @@
-{
-  "extends": "../../tslint.json",
-  "linterOptions": { "exclude": ["!**/*"] },
-  "rules": {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:86c3a054cd747603e0a03363e806b0cf7fdd4a645185bdc97769b1c31febd02e
+size 97

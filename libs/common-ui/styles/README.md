@@ -1,7 +1,3 @@
-# common-ui-styles
-
-This library was generated with [Nx](https://nx.dev).
-
-## Running unit tests
-
-Run `ng test common-ui-styles` to execute the unit tests via [Jest](https://jestjs.io).
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1194672a3e152babb6f53726257d8294fccc90a2a6799525072fadf56023e8a
+size 186

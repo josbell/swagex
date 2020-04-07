@@ -1,17 +1,3 @@
-// ***********************************************************
-// This example support/index.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
-
-// Import commands.js using ES2015 syntax:
-import './commands';
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4f67c07fdbc99202f61bda40b843b1de43b88193b23b60b8b9fdbe280727986
+size 599

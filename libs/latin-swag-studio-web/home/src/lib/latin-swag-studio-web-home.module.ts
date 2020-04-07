@@ -1,15 +1,3 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule, Route } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { CommonUiMaterialModule } from '@swagex/common-ui/material';
-import { MaterialCardComponent } from './material-card/material-card.component';
-
-export const latinSwagStudioWebHomeRoutes: Route[] = [];
-
-@NgModule({
-  imports: [CommonModule, RouterModule, CommonUiMaterialModule],
-  declarations: [HomeComponent, MaterialCardComponent],
-  exports: [HomeComponent]
-})
-export class LatinSwagStudioWebHomeModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a66ed6af7e4d3bd7480c0f0eae124cf79c2ebcba6fbf3b3d9f343276f5bdef4
+size 1294

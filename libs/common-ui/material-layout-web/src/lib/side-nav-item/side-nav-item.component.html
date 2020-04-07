@@ -1,24 +1,3 @@
-<a
-  mat-list-item
-  routerLink="."
-  (click)="onItemSelected(item)"
-  [ngStyle]="{ 'padding-left': depth * 12 + 'px' }"
->
-  <mat-icon *ngIf="item.icon" class="routeIcon">{{ item.icon }}</mat-icon>
-  {{ item.text }}
-  <span fxFlex *ngIf="item.submenu && item.submenu.length">
-    <span fxFlex></span>
-    <mat-icon [@indicatorRotate]="expanded ? 'expanded' : 'collapsed'">
-      expand_more
-    </mat-icon>
-  </span>
-</a>
-<div *ngIf="expanded">
-  <ng-container *ngFor="let subItem of item.submenu">
-    <mlw-side-nav-item
-      [item]="subItem"
-      [depth]="depth + 1"
-      (closeMenu)="onCloseMenu()"
-    ></mlw-side-nav-item>
-  </ng-container>
-</div>
+version https://git-lfs.github.com/spec/v1
+oid sha256:912fb645425c71dea3f3af4e13d829b07c8c9b1902525fcc09e9bac9fd102e8e
+size 656

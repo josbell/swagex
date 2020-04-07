@@ -1,12 +1,3 @@
-{
-  "fileServerFolder": ".",
-  "fixturesFolder": "./src/fixtures",
-  "integrationFolder": "./src/integration",
-  "modifyObstructiveCode": false,
-  "pluginsFile": "./src/plugins/index",
-  "supportFile": "./src/support/index.ts",
-  "video": true,
-  "videosFolder": "../../dist/cypress/apps/latin-swag-studio-web-e2e/videos",
-  "screenshotsFolder": "../../dist/cypress/apps/latin-swag-studio-web-e2e/screenshots",
-  "chromeWebSecurity": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b4cd6ae6a73f1355093e6deda7b00398b6651cdb980a47b1eb2dc2bcb234f7f4
+size 442

@@ -1,14 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { LayoutService } from '../layout.service';
-import { Router } from '@angular/router';
-
-@Component({
-  selector: 'mlw-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
-})
-export class HeaderComponent implements OnInit {
-  constructor(public configService: LayoutService, public router: Router) {}
-
-  ngOnInit(): void {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f066411147e95fa60523d4cc3035714bfe743b3aaa602e50df4fae965de5295
+size 421

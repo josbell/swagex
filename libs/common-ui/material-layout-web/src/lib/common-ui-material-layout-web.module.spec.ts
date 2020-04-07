@@ -1,14 +1,3 @@
-import { async, TestBed } from '@angular/core/testing';
-import { CommonUiMaterialLayoutWebModule } from './common-ui-material-layout-web.module';
-
-describe('CommonUiMaterialLayoutWebModule', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [CommonUiMaterialLayoutWebModule]
-    }).compileComponents();
-  }));
-
-  it('should create', () => {
-    expect(CommonUiMaterialLayoutWebModule).toBeDefined();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:75aef60fb6a46c653051035da18ff6f9d5e5238a866abfb3ae294bf267273488
+size 447

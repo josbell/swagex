@@ -1,14 +1,3 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from 'libs/latin-swag-studio-web/home/src/lib/home/home.component';
-
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e40c46fa658b10dcf2d4ec7b55cfddea835efe56ecb5059940b7e74d2492043
+size 438

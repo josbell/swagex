@@ -1,17 +1,3 @@
-@import '~@angular/material/theming';
-@import 'theme_variables.scss';
-
-@include mat-core();
-$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
-@include angular-material-theme($app-theme);
-
-// Our dark theme
-.dark-theme {
-  color: $light-primary-text;
-  $dark-primary: mat-palette($mat-yellow);
-  $dark-accent: mat-palette($mat-amber, A400, A100, A700);
-  $dark-warn: mat-palette($mat-red);
-  $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
-
-  @include angular-material-theme($dark-theme);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e43b8ff5fc01c920710635425a3534a474061d209f30fccd2b5eeed68f16d11
+size 812

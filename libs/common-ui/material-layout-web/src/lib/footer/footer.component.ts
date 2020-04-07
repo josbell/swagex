@@ -1,12 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'mlw-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
-})
-export class FooterComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d88b8d2f372abad698414cb11f0df9b988301d65e31aa3fcb2b9deae3703dd04
+size 270
